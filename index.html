@@ -4,37 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home </title><style>
-        p{background-color: bisque;
-        color: rgb(180, 180, 100);
-    font-size: medium;}
+      body{
+        background-color: aquamarine;
+      }
+      .nav{
+        display: flex;
+        justify-content: flex-end;
+        gap: 60px;
+      }
+      .back{
+        background-image: url("https://th.bing.com/th/id/OIP.ctRPAf47kWUufwvuc64UfgHaD7?w=1000&h=531&rs=1&pid=ImgDetMain");
+        width: 800px;
+        height: 400px;
+        margin-left: 200px;
+        text-align: center;
+        font-family: cursive;
+      }
+
+
+
+     p{background-color: bisque;
+        color: black;
+    font-size: medium;
+     padding: 30px;
+     text-align: justify;
+     border-radius: 20px;
+     margin: 20px;
+    }
+    image{
+        width: 300px;
+        height: 300px;
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+
     </style>
 </head>
 <body>
     <nav>
+       
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="page/product.html">Product</a></li>
-            <li><a href="page/login.html">Login</a></li>
-            <li><a href="page/contact.html">Contact</a></li>
-            <li><a href="page/signup.html">Signup</a></li>
+            <div class="nav">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="page/product.html">Product</a></div>
+            <div><a href="page/login.html">Login</a></div>
+            <div><a href="page/contact.html">Contact</a></div>
+            <div><a href="page/signup.html">Signup</a></div>
+        </div>
         </ul>
+    
     </nav>
-<h1>Discover The Raw Beauty Of Africa</h1><body>
- <img src="https://th.bing.com/th/id/OIP.ctRPAf47kWUufwvuc64UfgHaD7?w=1000&h=531&rs=1&pid=ImgDetMain" width="400">
+    <div class="back">
+   <h1>Discover The Raw Beauty Of Africa</h1>
+   </div>
+ <!-- <img src="https://th.bing.com/th/id/OIP.ctRPAf47kWUufwvuc64UfgHaD7?w=1000&h=531&rs=1&pid=ImgDetMain" width="400"> -->
  <p> Africa is a continent that embodies untamed splendor ,vibrant culture ,and breathtaking landscapes.
      Here is a glimpse of its beauty ;the different kinds of foods such as Fufu{west Africa},Akara 
-     [Nigeria],the Malva pudding {South Africa} , Kenkey{Ghana} </p> <h1></h1>
-<img src="https://th.bing.com/th/id/OIP.PoNB-8hReLFwcqC6ssrOIwHaHa?rs=1&pid=ImgDetMain" width="400">
-<h3>Vegetables  </h3>
-<img src="https://th.bing.com/th/id/OSK.HEROIumuaH_5An0-chmOqVihvA7DLOWNuCTvuxACn1zwpNA?rs=1&pid=ImgDetMain" alt="">
-<h3>Food: Akara Nigeria  </h3>
-<img src="https://th.bing.com/th/id/OIP.PoNB-8hReLFwcqC6ssrOIwHaHa?rs=1&pid=ImgDetMain" width="400">
-<h3>Spices  </h3>
+     [Nigeria],the Malva pudding {South Africa} , Kenkey{Ghana} </p> 
+     <div class="main">
+<div>
+<img src="https://th.bing.com/th/id/OIP.PoNB-8hReLFwcqC6ssrOIwHaHa?rs=1&pid=ImgDetMain" width="300px">
+<h3>Akara(local dish) </h3>
+</div>
+<div>
+<img src="https://th.bing.com/th/id/OSK.HEROIumuaH_5An0-chmOqVihvA7DLOWNuCTvuxACn1zwpNA?rs=1&pid=ImgDetMain" width="430px">
+<h3>Vegetables </h3>
+</div>
+<div>
 <!-- <img src="https://th.bing.com/th/id/R.c21afd8264d0026480e0f5b4e32e6141?rik=asPx%2fkw1XG1EUA&pid=ImgRaw&r=0" width="400"> -->
-<img src="https://th.bing.com/th/id/OIP.PoNB-8hReLFwcqC6ssrOIwHaHa?rs=1&pid=ImgDetMain" width="400">
-<h3></h3>
+<img src="images/spices.jpg"  width="430px">
+<h3>spices</h3>
+</div>
+<div>
+<img src="https://th.bing.com/th?id=OSK.3ca004cc094a315199958623a5575431&w=176&h=220&rs=2&qlt=80&o=6&cdv=1&dpr=1.5&pid=16.1" width="300px">
 <h3> Salads </h3>
-<img src="https://th.bing.com/th?id=OSK.3ca004cc094a315199958623a5575431&w=176&h=220&rs=2&qlt=80&o=6&cdv=1&dpr=1.5&pid=16.1" alt="">
-
+</div>
+</div>
+<footer>
+    <div class="foot">
+   <div><a href="https://www.bing.com/ck/a?!&&p=deb8b8fb9862f330JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE5Mw&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=facebook+login&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2xvZ2luLnBocC8&ntb=1"><i class="fa-brands fa-facebook-f"></i></a></div> 
+   <div><a href="https://www.bing.com/ck/a?!&&p=d812b27005a7c074JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE4Ng&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vIyE6&ntb=1"><i class="fa-brands fa-square-youtube"></i></a></div> 
+   <div><a href="https://www.bing.com/ck/a?!&&p=2163ee9a212b1838JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8_bGFuZy1lbg&ntb=1"> <i class="fa-brands fa-x-twitter"></i></a></div> 
+   <div> <a href="https://www.bing.com/ck/a?!&&p=8df0e0f4e7eb4fa6JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1"><i class="fa-brands fa-square-instagram"></i></a></div> 
+</div>
+</footer>
 </body>
 </html>
