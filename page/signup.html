@@ -8,9 +8,12 @@
       body{
          background-color: aquamarine;
       }
+      a{
+         text-decoration: none;
+      }
       h2{
          text-align: center;
-         font-family: cursive;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       }
       .nav{
         display: flex;
@@ -21,9 +24,11 @@
          background-color: antiquewhite;
          display: flex;
          justify-content: center;
-         width: 400px;
-         height: 700px;
-         margin-left: 400px;
+         width: 900px;
+         margin-left: 150px;
+         height: 600px;
+         box-shadow: 5px 5px 5px 10px;
+         border-radius: 50px;
          padding-top: 40px;
          line-height: 20px;
          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -34,11 +39,22 @@
    
       }
       .but{
-         margin-left: 90px;
+         margin-left: 50px;
+         width: 200px;
          margin-top: 30px;
-         background-color: whitesmoke;
+         background-color: aqua;
          padding: 5px;
-         border-radius: 2px;
+         border-radius: 30px;
+      }
+      .foot{
+        display: flex;
+        gap: 30px;
+        background-color: antiquewhite;
+        padding: 40px;
+      }
+      .l-one:hover{
+        background-color: aqua;
+        padding: 5px;
       }
     </style>
 </head>
@@ -46,11 +62,12 @@
    <nav>
       <ul>
           <div class="nav">
-          <div><a href="../index.html">Home</a></div>
-          <div><a href="product.html">Product</a></div>
-          <div><a href="login.html">Login</a></div>
-          <div><a href="contact.html">Contact</a></div>
-          <div><a href="signup.html">Signup</a></div>
+          <div class="l-one"><a href="../index.html">Home</a></div>
+          <div class="l-one"><a href="product.html">Product</a></div>
+          <div class="l-one"><a href="about.html">about us</a></div>
+          <div class="l-one"><a href="login.html">Login</a></div>
+          <div class="l-one"><a href="contact.html">Contact</a></div>
+          <div class="l-one"><a href="signup.html">Signup</a></div>
       </div>
       </ul>
   </nav>
@@ -93,6 +110,7 @@
     <hr>
     <footer>
       <div class="foot">
+         <p>Please follow us on our socials</p>
      <div><a href="https://www.bing.com/ck/a?!&&p=deb8b8fb9862f330JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE5Mw&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=facebook+login&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2xvZ2luLnBocC8&ntb=1"><i class="fa-brands fa-facebook-f"></i></a></div> 
      <div><a href="https://www.bing.com/ck/a?!&&p=d812b27005a7c074JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE4Ng&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vIyE6&ntb=1"><i class="fa-brands fa-square-youtube"></i></a></div> 
      <div><a href="https://www.bing.com/ck/a?!&&p=2163ee9a212b1838JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8_bGFuZy1lbg&ntb=1"> <i class="fa-brands fa-x-twitter"></i></a></div> 

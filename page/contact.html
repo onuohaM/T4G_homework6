@@ -8,35 +8,82 @@
         body{
             background-color: aquamarine;
         }
+        a{
+            text-decoration: none;
+        }
       .nav{
         display: flex;
         justify-content: flex-end;
         gap: 60px;
       }
+      .foot{
+        display: flex;
+        gap: 30px;
+        background-color: antiquewhite;
+        padding: 40px;
+      }
+      .div .img{
+        width: 50%;
+        height: 400px;
+      }
+      .imageform{
+        display: flex;
+        gap: 20px;
+      }
+      .formdiv{
+        width: 50%;
+        margin-top: 30px;
+        
+      }
+      form{
+        background-color: aqua;
+        padding: 40px;
+        box-shadow: 4px 4px 4px 4px;
+      }
+      input{
+        border: 1px solid seashell;
+        width: 190px;
+        height: 15px;
+        margin-top: 5px;
+      }
+      textarea{
+        margin-top: 10px;
+      }
+      button{
+        background-color: beige;
+        border-radius: 30px;
+      }
+      .l-one:hover{
+        background-color: aqua;
+        padding: 5px;
+      }
     </style>
 </head>
 <body>
     <nav>
-       
         <ul>
             <div class="nav">
-            <div><a href="../index.html">Home</a></div>
-            <div><a href="product.html">Product</a></div>
-            <div><a href="login.html">Login</a></div>
-            <div><a href="contact.html">Contact</a></div>
-            <div><a href="signup.html">Signup</a></div>
+            <div  class="l-one"><a href="../index.html">Home</a></div>
+            <div class="l-one"><a href="product.html">Product</a></div>
+            <div class="l-one"><a href="about.html">about us</a></div>
+            <div class="l-one"><a href="login.html">Login</a></div>
+            <div class="l-one"><a href="contact.html">Contact</a></div>
+            <div class="l-one"><a href="signup.html">Signup</a></div>
         </div>
         </ul>
-    
     </nav>
+    <div class="imageform">
+        <div><img src="../images/spices.jpg" width="700px"></div>
+        <div class="formdiv">
     <form action="">
+        <h2>Send us a message</h2>
         <div>
-            <label for="Your Name">Full Name</label>
-            <input type="text" placeholder="Full Name" required> 
+        <div><label for="Your Name">Full Name</label></div>
+            <input type="text" required> 
         </div>
         <div>
-            <label for="email">E-mail</label>
-            <input type="text" placeholder="email" required>
+            <div><label for="email">E-mail</label></div>
+            <input type="text" required>
         </div>
         <div>
             <textarea name="" placeholder="Type your message" id="Your Message" cols="30" rows="10" required></textarea>
@@ -44,10 +91,13 @@
         <div>
             <button type="submit">send</button>
         </div>
+    </div>
     </form>
+</div>
     <hr>
     <footer>
         <div class="foot">
+            <p>Please follow us on our socials</p>
        <div><a href="https://www.bing.com/ck/a?!&&p=deb8b8fb9862f330JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE5Mw&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=facebook+login&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2xvZ2luLnBocC8&ntb=1"><i class="fa-brands fa-facebook-f"></i></a></div> 
        <div><a href="https://www.bing.com/ck/a?!&&p=d812b27005a7c074JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE4Ng&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vIyE6&ntb=1"><i class="fa-brands fa-square-youtube"></i></a></div> 
        <div><a href="https://www.bing.com/ck/a?!&&p=2163ee9a212b1838JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8_bGFuZy1lbg&ntb=1"> <i class="fa-brands fa-x-twitter"></i></a></div> 

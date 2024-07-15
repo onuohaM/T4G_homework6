@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home </title><style>
+    <title>home </title> <script src="https://kit.fontawesome.com/1b58fa4bf4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <style>
       body{
         background-color: aquamarine;
+      }
+      a{
+        text-decoration: none;
+      }
+      h1{
+        text-align: center;
       }
       .nav{
         display: flex;
         justify-content: flex-end;
         gap: 60px;
+      }
+      .l-one:hover{
+        background-color: aqua;
+        padding: 5px;
       }
       .back{
         background-image: url("https://th.bing.com/th/id/OIP.ctRPAf47kWUufwvuc64UfgHaD7?w=1000&h=531&rs=1&pid=ImgDetMain");
@@ -21,26 +33,62 @@
         font-family: cursive;
       }
 
+  .productlink{
+    margin-top: 30px;
+  }
+  .productlink:hover{
+    background-color: aqua;
+    padding: 5px;
+  }
 
-
-     p{background-color: bisque;
+     .para-text{background-color: bisque;
         color: black;
     font-size: medium;
      padding: 30px;
      text-align: justify;
+     line-height: 25px;
      border-radius: 20px;
      margin: 20px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-    image{
+    .image{
         width: 300px;
         height: 300px;
     }
     .main{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-around;
     
     }
+    button{
+      background-color: white;
+      color: black;
+      border-radius: 10px;
+    }
+    .foot{
+        display: flex;
+        gap: 30px;
+        background-color: antiquewhite;
+        padding: 40px;
+      }
+      .news{
+        background-color: darkcyan;
+        display: flex;
+        /* margin: 30px; */
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+      }
+      .sign{
+        margin-top: 60px;
+      }
+      form{
+        margin-top: 50px;
+        background-color: aliceblue;
+        padding: 10px;
+      }
 
     </style>
 </head>
@@ -49,57 +97,76 @@
        
         <ul>
             <div class="nav">
-            <div><a href="index.html">Home</a></div>
-            <div><a href="page/product.html">Product</a></div>
-            <div><a href="page/login.html">Login</a></div>
-            <div><a href="page/contact.html">Contact</a></div>
-            <div><a href="page/signup.html">Signup</a></div>
+            <div class="l-one"><a href="index.html">Home</a></div>
+            <div class="l-one"><a href="page/product.html">Product</a></div>
+            <div class="l-one"><a href="page/about.html">about us</a></div>
+            <div class="l-one"><a href="page/login.html">Login</a></div>
+            <div class="l-one"><a href="page/contact.html">Contact</a></div>
+            <div class="l-one"><a href="page/signup.html">Signup</a></div>
         </div>
         </ul>
     
     </nav>
     <div class="back">
-   <h1>Discover The Raw Beauty Of Africa</h1>
+   <h1 id="heading">Discover The Raw Beauty Of Africa</h1>
+   <button><a id="product" href="page/product.html">Explore our products</a></button>
    </div>
- <!-- <img src="https://th.bing.com/th/id/OIP.ctRPAf47kWUufwvuc64UfgHaD7?w=1000&h=531&rs=1&pid=ImgDetMain" width="400"> -->
- <p> Africa is a continent that embodies untamed splendor ,vibrant culture ,and breathtaking landscapes.
-     Here is a glimpse of its beauty ;the different kinds of foods such as Fufu{west Africa},Akara 
-     [Nigeria],the Malva pudding {South Africa} , Kenkey{Ghana} </p> 
-     <div class="main">
-<div>
-<img src="https://th.bing.com/th/id/OIP.PoNB-8hReLFwcqC6ssrOIwHaHa?rs=1&pid=ImgDetMain" width="300px">
+<div class="para-text">
+ <p> Africa is a continent that embodies untamed splendor, vibrant culture, and breathtaking landscapes.
+     Here is a glimpse of its beauty, the different kinds of foods such as Fufu(west Africa), Akara 
+     (Nigeria), the Malva pudding (South Africa), Kenkey(Ghana).All these indeginous meals are prepared using Africa's rich and natural foodstuffs 
+     <div><a class="productlink" href="page/product.html">learn more</a></div>
+    </p> 
+  </div>
+     <h1 class="secondhead">Browse Through Our Products</h1>
+  <div class="main">
+<div >
+<img  class="image" src="https://th.bing.com/th/id/OIP.PoNB-8hReLFwcqC6ssrOIwHaHa?rs=1&pid=ImgDetMain" width="300px">
 <h3>Akara(local dish) </h3>
 </div>
 <div>
-<img src="https://th.bing.com/th/id/OSK.HEROIumuaH_5An0-chmOqVihvA7DLOWNuCTvuxACn1zwpNA?rs=1&pid=ImgDetMain" width="430px">
+<img class="image" src="https://th.bing.com/th/id/OSK.HEROIumuaH_5An0-chmOqVihvA7DLOWNuCTvuxACn1zwpNA?rs=1&pid=ImgDetMain" width="430px">
 <h3>Vegetables </h3>
 </div>
 <div>
 <!-- <img src="https://th.bing.com/th/id/R.c21afd8264d0026480e0f5b4e32e6141?rik=asPx%2fkw1XG1EUA&pid=ImgRaw&r=0" width="400"> -->
-<img src="images/spices.jpg"  width="430px">
+<img  class="image"src="images/spices.jpg"  width="430px">
 <h3>spices</h3>
 </div>
 <div>
-<img src="https://th.bing.com/th?id=OSK.3ca004cc094a315199958623a5575431&w=176&h=220&rs=2&qlt=80&o=6&cdv=1&dpr=1.5&pid=16.1" width="300px">
+<img  class="image" src="https://th.bing.com/th?id=OSK.3ca004cc094a315199958623a5575431&w=176&h=220&rs=2&qlt=80&o=6&cdv=1&dpr=1.5&pid=16.1" width="300px">
 <h3> Salads </h3>
 </div>
 <div>
-  <img src="images/legumes.jpg" width="430px">
+  <img class="image" src="images/legumes.jpg" width="430px">
   <h3>legumes</h3>
 </div>
 <div>
-  <img src="images/leafs.jpg" width="430px">
+  <img  class="image" src="images/leafs.jpg" width="430px">
   <h3>leavy greens</h3>
 </div>
 </div>
+<div class="news">
+  <div>
+    <h2>NEWSLETTER</h2>
+    Would you like to receive monthly information from us?</div>
+    <div class="sign">sign up here </div>
+    <div><form action="">
+<label for="">Email</label>
+<input type="email" name="" id="" required>
+<button type="submit">submit</button>
+    </form>
+  </div>
 </div>
 <footer>
     <div class="foot">
+      <p>Please follow us on our socials</p>
    <div><a href="https://www.bing.com/ck/a?!&&p=deb8b8fb9862f330JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE5Mw&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=facebook+login&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2xvZ2luLnBocC8&ntb=1"><i class="fa-brands fa-facebook-f"></i></a></div> 
    <div><a href="https://www.bing.com/ck/a?!&&p=d812b27005a7c074JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE4Ng&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vIyE6&ntb=1"><i class="fa-brands fa-square-youtube"></i></a></div> 
    <div><a href="https://www.bing.com/ck/a?!&&p=2163ee9a212b1838JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8_bGFuZy1lbg&ntb=1"> <i class="fa-brands fa-x-twitter"></i></a></div> 
    <div> <a href="https://www.bing.com/ck/a?!&&p=8df0e0f4e7eb4fa6JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1"><i class="fa-brands fa-square-instagram"></i></a></div> 
 </div>
 </footer>
+<script src="src/index.js"></script>
 </body>
 </html>

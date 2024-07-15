@@ -7,8 +7,16 @@
     <style>
         body{
             background-color: aquamarine;
+            margin-left: 40px;
         }
-        p{
+        a{
+            text-decoration: none;
+        }
+        img{
+            width: 360px;
+            border-radius: 50%;
+        }
+        .textbutton{
             background-color: antiquewhite;
             padding: 30px;
             border-radius: 30px;
@@ -23,7 +31,7 @@
         /* h4{background-color: rgb(224, 196, 37);
         color: rgb(0, 255, 157);} */
         h4{
-            background-color: beige;
+            background-color: gold;
             padding: 10px;
             font-size: larger;
         }
@@ -31,10 +39,35 @@
             text-align: center;
             font-family: cursive;
         }
-        .page{
-            display: flex;
-            flex-wrap: wrap;
+        button{
+            background-color: beige;
+            border-radius: 30px;
+            
         }
+        
+        .foot{
+        display: flex;
+        gap: 30px;
+        background-color: antiquewhite;
+        padding: 40px;
+      }
+      .font{
+        display: flex;
+        justify-content: flex-end;
+        gap: 80px;
+      }
+      .l-one:hover{
+        background-color: aqua;
+        padding: 5px;
+      }
+      .page{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      .imagetext{
+        width: 350px;
+      }
     </style>
 </head>
 <body>
@@ -42,11 +75,12 @@
        
         <ul>
             <div class="nav">
-            <div><a href="../index.html">Home</a></div>
-            <div><a href="product.html">Product</a></div>
-            <div><a href="login.html">Login</a></div>
-            <div><a href="contact.html">Contact</a></div>
-            <div><a href="signup.html">Signup</a></div>
+            <div class="l-one"><a href="../index.html">Home</a></div>
+            <div class="l-one"><a href="product.html">Product</a></div>
+            <div class="l-one"><a href="about.html">about us</a></div>
+            <div class="l-one"><a href="login.html">Login</a></div>
+            <div class="l-one"><a href="contact.html">Contact</a></div>
+            <div class="l-one"><a href="signup.html">Signup</a></div>
         </div>
         </ul>
     
@@ -54,78 +88,96 @@
    
     <h1>Our Raw Food Product</h1>
     <div class="page">
-        <div>
+        <div class="imagetext">
         <img src="https://th.bing.com/th/id/OIP.FmivZWmMG6hlKdS6y_L6VQHaEL?w=327&h=184&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+        <div class="textbutton">
         <h4>African Taro</h4>
-        <p>What Is Taro? Taro (Colocasia esculenta), also called eddo or dasheen, is a tropical plant native 
+        <p>Taro (Colocasia esculenta), also called eddo or dasheen, is a tropical plant native 
             to Southeast Asia that produces a starchy root vegetable with a brown outer skin and a white 
             flesh with purple specks. Although commonly referred to as "taro root," the vegetable is 
             technically not a root but a corm, or underground stem.
+            </p>
             <button><a href="https://www.bing.com/search?pglt=41&q=taro&cvid=351281dc63564fd79c8ba5b4ab109a9b&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPNIBCDg1ODdqMGoxqAIAsAIA&FORM=ANNTA1&PC=U531">Read more </a></button>
-        </p>
+            <div class="textbutton"></div>
     </div>
-    <div>
+        </div>
+    <div class="imagetext">
         <img src="https://th.bing.com/th/id/OIP.62noxZ2eBU8U8vQU_e_pjwHaFj?w=232&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+        <div class="textbutton">
         <h4>African Sweet Potatoes</h4>
            <p> Sweet potato is known in the Philippines as Kamote, it is a sweet-tasting starchy root vegetable. 
             It has a thin, brown skin on the outside with orange color flesh, but other varieties are white,
              purple or yellow. You can eat sweet potatoes whole or peeled.
-            <button> <a href="https://en.wikipedia.org/wiki/Sweet_potato">read more</a></button>
             </p>
+            <button> <a href="https://en.wikipedia.org/wiki/Sweet_potato">read more</a></button>
+        </div>
     </div>
-    <div>
-    <img src="https://th.bing.com/th/id/R.74f4434db78c8d6eb1f49418d0d45ae0?rik=OQ%2fnj0GMBxP70w&pid=ImgRaw&r=0" width="400">     
+    <div class="imagetext">
+    <img src="https://th.bing.com/th/id/R.74f4434db78c8d6eb1f49418d0d45ae0?rik=OQ%2fnj0GMBxP70w&pid=ImgRaw&r=0" width="400">
+    <div class="textbutton">
         <h4>African Aubergine</h4>
         <p>Aubergine, also known as eggplant in North America, is a versatile and nutritious vegetable that is widely used in 
             various cuisines around the world. This glossy, purple-skinned vegetable belongs to the nightshade family, which also includes
              tomatoes and bell peppers. In this article, we will explore the origins, nutritional benefits, and
               culinary uses of aubergine.
-            <button><a href="https://en.wikipedia.org/wiki/Eggplant">read more</a></button>
             </p>
+            <button><a href="https://en.wikipedia.org/wiki/Eggplant">read more</a></button>
+    </div>
         </div>
-        <div>
+        <div class="imagetext">
             <img src="../images/tomatoes.jpg" width="430px">
+            <div class="textbutton">
             <h4>Tomatoes</h4>
             <p>In cooking, tomatoes are usually used alone or paired alongside other true vegetables in savory dishes. As a result, they’ve
                  earned a reputation as a vegetable, even though they’re technically a fruit by scientific standards.
-                <button><a href="https://en.wikipedia.org/wiki/Tomato">read more</a></button>
                 </p>
+                <button><a href="https://en.wikipedia.org/wiki/Tomato">read more</a></button>
+            </div>
         </div>
-        <div>
+        <div class="imagetext">
             <img src="../images/bellpepper.jpg" width="430px">
+            <div class="textbutton">
             <h4>Bell Pepper</h4>
             <p>Like the tomato, bell peppers are botanical fruits but culinary vegetables. Pieces of bell pepper
                  are commonly used in garden salads and as toppings on pizza.
                   There are many varieties of stuffed peppers prepared using hollowed or halved bell peppers. Bell peppers
                  (and other cultivars of Capsicum annuum) may be used in the production of the spice paprika.
-                <button><a href="https://en.wikipedia.org/wiki/Bell_pepper">read more</a></button>
                 </p>
-                <div>
+                <button><a href="https://en.wikipedia.org/wiki/Bell_pepper">read more</a></button>
+            </div>
+        </div>
+                <div class="imagetext">
                     <img src="../images/yam.jpg" width="430px">
+                    <div class="textbutton">
                     <h4>Yam</h4>
                     <p>Yams of African species must be cooked to be safely eaten, because various natural substances in yams
                          can cause illness if consumed raw.
                          The most common cooking methods in Western and Central Africa are by boiling, frying or roasting.
-                         <button><a href="https://en.wikipedia.org/wiki/Yam_(vegetable)">read more</a></button>
                         </p>
+                        <button><a href="https://en.wikipedia.org/wiki/Yam_(vegetable)">read more</a></button>
+                    </div>
                 </div>
-                <div>
+                <div class="imagetext">
                     <img src="../images/spinach.jpg" width="430px">
+                    <div class="textbutton">
                     <h4>Spinach</h4>
                     <p>Spinach is eaten both raw, in salads, and cooked in soups, curries, or casseroles.
                          Notable dishes with spinach as a main ingredient include spinach salad, spinach soup, spinach dip.
-                        <button><a href="https://en.wikipedia.org/wiki/Spinach">read more</a></button>
                         </p>
+                        <button><a href="https://en.wikipedia.org/wiki/Spinach">read more</a></button>
+                    </div>
                 </div>
         </div>
-    </div>
     <footer>
         <div class="foot">
+            <p>Please follow us on our socials</p>
+            <div class="fonts">
        <div><a href="https://www.bing.com/ck/a?!&&p=deb8b8fb9862f330JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE5Mw&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=facebook+login&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2xvZ2luLnBocC8&ntb=1"><i class="fa-brands fa-facebook-f"></i></a></div> 
        <div><a href="https://www.bing.com/ck/a?!&&p=d812b27005a7c074JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE4Ng&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vIyE6&ntb=1"><i class="fa-brands fa-square-youtube"></i></a></div> 
        <div><a href="https://www.bing.com/ck/a?!&&p=2163ee9a212b1838JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8_bGFuZy1lbg&ntb=1"> <i class="fa-brands fa-x-twitter"></i></a></div> 
        <div> <a href="https://www.bing.com/ck/a?!&&p=8df0e0f4e7eb4fa6JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xNGJhNjcyOS1mMjI2LTYzNjEtMmRjNy03MzE1ZjMwZjYyMGEmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=14ba6729-f226-6361-2dc7-7315f30f620a&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1"><i class="fa-brands fa-square-instagram"></i></a></div> 
     </div>
+</div>
     </footer>
 </body>
 </html>
