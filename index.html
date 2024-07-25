@@ -89,6 +89,16 @@
         background-color: aliceblue;
         padding: 10px;
       }
+      #imagetwo{
+        display: none;
+      }
+      #less{
+        display: none;
+        margin-right: 200px;
+      }
+      #more{
+        margin-left: 500px;
+      }
 
     </style>
 </head>
@@ -118,14 +128,14 @@
      <div><a class="productlink" href="page/product.html">learn more</a></div>
     </p> 
   </div>
-     <h1 class="secondhead">Browse Through Our Products</h1>
+     <h1 id="secondhead">Browse Through Our Products</h1>
   <div class="main">
 <div >
-<img  class="image" src="https://th.bing.com/th/id/OIP.PoNB-8hReLFwcqC6ssrOIwHaHa?rs=1&pid=ImgDetMain" width="300px">
+<img  class="image" src="images/th.jpeg" width="300px">
 <h3>Akara(local dish) </h3>
 </div>
 <div>
-<img class="image" src="https://th.bing.com/th/id/OSK.HEROIumuaH_5An0-chmOqVihvA7DLOWNuCTvuxACn1zwpNA?rs=1&pid=ImgDetMain" width="430px">
+<img class="image" src="images/veges.jpeg" width="430px">
 <h3>Vegetables </h3>
 </div>
 <div>
@@ -134,7 +144,7 @@
 <h3>spices</h3>
 </div>
 <div>
-<img  class="image" src="https://th.bing.com/th?id=OSK.3ca004cc094a315199958623a5575431&w=176&h=220&rs=2&qlt=80&o=6&cdv=1&dpr=1.5&pid=16.1" width="300px">
+<img  class="image" src="images/salad.jpeg" width="300px">
 <h3> Salads </h3>
 </div>
 <div>
@@ -144,6 +154,24 @@
 <div>
   <img  class="image" src="images/leafs.jpg" width="430px">
   <h3>leavy greens</h3>
+</div>
+</div>
+<button type="submit" id="more">show more images</button>
+<div id="imagetwo">
+  <div>
+    <img  class="image"src="images/fruits.jpeg" widtht="430px">
+    <h3>African Fruits</h3>
+  </div>
+  <div>
+    <img class="image" src="images/wheat.jpeg" width="430px">
+    <h3>African Wheat</h3>
+  </div>
+  <div>
+    <img  class="image"src="images/maize.jpeg" width="430px">
+    <h3>African Maize</h3>
+  </div>
+  <div id="less">
+  <button>show less images</button>
 </div>
 </div>
 <div class="news">
