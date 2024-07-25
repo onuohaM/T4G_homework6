@@ -6,10 +6,12 @@
     <title>Document</title><script src="https://kit.fontawesome.com/1b58fa4bf4.js" crossorigin="anonymous"></script>
     <style>
         body{
-            background-color: aquamarine;
+            background-image: url(../images/spinach.jpg);
+            background-size: cover;
         }
         a{
             text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
       .nav{
         display: flex;
@@ -33,6 +35,39 @@
         background-color: aqua;
         padding: 5px;
       }
+      .fa-right-to-bracket{
+        font-size: 30em;
+        color: rgb(117, 244, 117);
+        box-shadow: 4px 4px 4px 20px white;
+      }
+      .page{
+        display: flex;
+        gap: 3em;
+        justify-content: center;
+      }
+      .fm{
+        background-color: saddlebrown;
+        padding: 30px 30px;
+        line-height: 25px;
+        color: azure;
+        border-radius: 20px;
+      }
+      input{
+        width: 150px;
+        line-height: 15px;
+      }
+      button{
+     background-color: antiquewhite;
+     color: blue;
+      }
+      button:hover{
+        background-color: aquamarine;
+        color: black;
+      }
+      h2{
+        text-align: center;
+        color: azure;
+      }
     </style>
 </head>
 <body>
@@ -49,10 +84,17 @@
         </div>
         </ul>
     </nav>
+    <div class="page">
     <div class="emoji">
-        <div><i class="font" class="fa-solid fa-right-to-bracket"></i></div>
+        <i class="fa-solid fa-right-to-bracket"></i>
+    </div>
+    <div class="fm">
     <form action="">
-        <div>
+        <h2>Login Here</h2>
+        <div><label for="username">UserName</label>
+        <input type="text">
+        </div>
+        <div >
     <label for="">Email</label>
     <input type="text" placeholder="email" required>
 </div>
@@ -60,10 +102,15 @@
     <label for="">Password</label>
     <input type="password" name="" id="" required>
 </div>
+      <a href="">Forgot Password</a>
 <div>
     <button type="submit">submit</button>
+    <div>
+    Don't have an account ? <a href="signup.html">Sign Up Now</a>
+</div>
 </div>
     </form>
+    </div>
     </div>
     <hr>
     
